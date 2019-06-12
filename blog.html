@@ -1,34 +1,111 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Blog</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Blog Posts</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-				<!-- Main -->
-					<section id="main">
-						<div class="content-wrapper">
-							<h1 class="title">My Experinece on JS Conf Eu 2019</h1>
-							<img src="" alt="" class="main-image">
-							<p class="post-content"></p>
-						</div>
-					</section>
+<body class="is-preload">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Dept Agency</li>
-						</ul>
-					</footer>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-			</div>
+		<!-- Main -->
+		<section id="main" style="width: 65em; height: auto;">
+			<header>
+				<h1>Blog Posts</h1>
+			</header>
 
-	</body>
+			<section>
+				<h2 style="font-weight: bold;">Sharing my experience from JS Conf Eu 2019</h2>
+
+				<h2 style="font-weight:bold;">Intro</h2>
+				<p>Last week I attended the Js Conf Eu 2019, in Berlin Germany.
+					It was one extraordinary experience for me, as my first conference in my career.
+					Except for the fact of gaining new knowledge, this conference was a perfect place for
+					exchanging practical and intuitive ways of using JavaScript.</p>
+
+				<h2 style="font-weight: bold;">What presentations did I attend?</h2>
+				<p>Among the rich schedule of events and high renominated speakers, I attended the presentations that caught my eye
+					and were interesting in some way, either directed in a practical or theoretical way. There were a bunch of talks
+					about the usage and the power of JavaScript nowadays, in the path of becoming one of the most powerful programming
+					languages. The presentations that remained in my memory are the JavaScript's Journey to the Edge by Ashley
+					Williams and the Performance Empathy by Housein Djireh,
+					Teaching kids to code by Jason Straughan, Shape Of The Web by Henri Helvetica, as well the presentations about the
+					usage and implementation of Node.js .
+				</p>
+
+				<h2 style="font-weight: bold;">What I've learned?</h2>
+				<p>Serverless architecture is taking over the IT world and it is giving a nice
+					foundation for building more affordable apps with higher performance efficiency.
+					Before we dive into the programming sea, it is very important to know how the internet works, and probably give
+					some thought of how it will be working in the future. The accessibility of data, either on mobile or desktop
+					devices need to be rendered with really high frequency. The load time of data shouldn't be more than 3 seconds,
+					that's why it is important to talk and think more deeply of improving the basic client-server architecture. Ashley
+					Williams in her talk made interesting analogy of referencing for data as pizza and data transfer as pizza
+					accessibility. Data Centers contain the Edge Architecture that we are about to elaborate in this post.
+
+				</p>
+
+				<p>In the process of Client side rendering, what it is actually done is that the chef is transferred to the client,
+					and the java script is executed on the place where the client is located. Client side rendering + Cache is
+					improved version of the basic rendering, in this case the JS program is sent to the specific point of presence
+					where is stored, and from that point it is re-sent to the point of its execution.
+					Server Side Rendering, with the appearance of Node.js that offers unifying of web development, this made the
+					server accessible to the JS developers. But lets get back to our pizza example for server side rendering, so the
+					chef is preparing the pizza in its place. The JS code is executing in one place and the output is sent right away
+					to the client. So as we can see in client side we sent the chef, and in server side rendering we sent the pizza,
+					that is the main difference.
+					Server Side Rendering + Cache, in this type of rendering we sent the pizza to our point of presence or cache
+					station, and then the pizza is re-sent to the client, but not intuitive approach. What if the client wants to add
+					some toppings on it pizza, we should do all the way around to give the client the desired output. Let's get to the
+					point. What is actually Edge-side rendering?
+
+				</p>
+
+				<p>As we can see from the picture above, the edge-side architecture gives the chef opportunity to cook in the
+					basket, or to execute the JS code in the actual data center or point of presence, presented with cache memory. And
+					the output of the code is then sent to the end user. So let's get to the benefits that we have with using
+					edge-side rendering. Our circle of thoughts will be closed as we begun, how fast is this architecture and how are
+					acting the benchmarks when we talk about the load time of presented data of certain device. The edge-side
+					rendering offers us faster rendering of data, but we should implement some crucial changes in order to implement
+					this architecture in our IT environment. First the client code need to be executed directly on server, also we
+					need to bring the app where the big data is stored, and the web browsers should run all the code from the web
+					pages. But how can we use this architecture? Yes, here is Cloudflare Workers, that can deploy serverless
+					JavaScript to data centers across 180 cities that can give the code exceptional performance and reliability. Also
+					I learnt about this new npm module, called Wrangler, that can be installed as it is shown on the photo bellow, and
+					can offer us easy way of creating DNS, and convenient way of publishing code on certain fresh domain created in
+					few seconds.</p>
+
+
+
+				<img src="" alt="">
+			</section>
+
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; Dept Agency</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+
+</body>
+
 </html>
